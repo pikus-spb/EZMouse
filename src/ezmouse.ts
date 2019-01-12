@@ -25,7 +25,7 @@ const imageBase64Data = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA8C
 
 export default class EZMouse {
     shown: boolean = false;
-    moveDelta: MoveDelta =  {
+    moveDelta: MoveDelta = {
         delta: 0,
         direction: MoveDirection.none
     };
@@ -61,7 +61,7 @@ export default class EZMouse {
                     height: 16
                 }
             };
-            const { classes } = jss.createStyleSheet(styles).attach();
+            const {classes} = jss.createStyleSheet(styles).attach();
 
             $(`<img 
                 src="${imageBase64Data}"
