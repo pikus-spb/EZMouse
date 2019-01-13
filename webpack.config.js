@@ -1,10 +1,14 @@
 module.exports = {
+    devServer: {
+        contentBase:  __dirname + '/demo',
+        port: 8080
+    },
     context: __dirname,
     devtool: "inline-source-map",
-    entry: "./index.ts",
+    entry: "./demo/index.ts",
     output: {
-        path: __dirname + "/js",
-        filename: "scripts.min.js"
+        path: __dirname + "/demo",
+        filename: "src.js"
     },
     watchOptions: {
         poll: true

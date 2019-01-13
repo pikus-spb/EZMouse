@@ -1,4 +1,4 @@
-import EZMouse from './src/ezmouse';
+import EZMouse from '../src/ezmouse';
 
 new EZMouse().run();
 

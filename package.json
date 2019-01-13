@@ -2,15 +2,16 @@
   "name": "ezmouse",
   "version": "1.0.0",
   "description": "JavaScript implementation of mouse cursor supporting basic functionality for keyboard accessability",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "demo": "webpack-dev-server --watch",
+    "build": "tsc src/ezmouse.ts --outDir build --target es6"
   },
   "author": "Petr Savelev",
   "license": "MIT",
   "devDependencies": {
     "ts-loader": "^5.3.2",
+    "typescript": "^3.2.2",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
@@ -21,7 +22,6 @@
     "jquery": "^3.3.1",
     "jss": "^9.8.7",
     "jss-preset-default": "^4.5.0",
-    "lodash": "^4.17.11",
-    "typescript": "^3.2.2"
+    "lodash": "^4.17.11"
   }
 }
